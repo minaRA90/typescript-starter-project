@@ -11,6 +11,7 @@
     "dist/"
   ],
   "scripts": {
+    "start": "node dist/cli.js",
     "clean": "rm -rf ./dist && rm -rf ./tmp",
     "build": "yarn clean && yarn compile",
     "compile": "node node_modules/typescript/bin/tsc -p ./tsconfig.json",
@@ -37,6 +38,7 @@
     ]
   },
   "dependencies": {
+    "@types/node": "^14.14.41",
     "express": "^4.17.1"
   },
   "devDependencies": {
